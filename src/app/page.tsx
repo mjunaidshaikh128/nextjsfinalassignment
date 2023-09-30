@@ -1,3 +1,4 @@
+"use client"
 import StoreCard from "./components/StoreCard";
 
 const fetchClothingStores = async (): Promise<any[]> => {
