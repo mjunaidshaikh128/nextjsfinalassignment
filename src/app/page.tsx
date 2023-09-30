@@ -1,7 +1,7 @@
 import StoreCard from "./components/StoreCard";
 
 const fetchClothingStores = async (): Promise<any[]> => {
-  const response = await fetch("http://127.0.0.1:3000/api/store");
+  const response = await fetch(process.env.URL + "/api/store");
   const clothingStores = await response.json();
   return clothingStores;
 };
