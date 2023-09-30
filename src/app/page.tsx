@@ -14,7 +14,7 @@ export default async function Home() {
       {/* <Header /> */}
       <div className="py-3 px-36 mt-10 flex flex-wrap">
         {clothingStores.map((store) => (
-          <StoreCard store={store} />
+          <StoreCard key={store.id} store={store} />
         ))}
       </div>
     </main>
